@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: black;
+        font-family: Dancing Script;
+    }
+    .container {
+        /* border: 2px green solid; */
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        border-radius: 20%;
+        margin: 10px;
+        height: 180px;
+        width: 180px;
+        font-size: 0px;
+
+        /* this is for transitional effect  */
+        /* transition-property: background-color;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s; */
+
+        /* transition: transition-property transition-duration transition-timing-function transition-delay; */
+        transition: all .3s ease-in-out 0s;
+    }
+    .box:hover {
+        background-color: white;
+        border-radius: 100%;
+        height: 400px;
+        width: 400px;
+        font-size: 80px;
+    }
+
+    .reply {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reply a {
+        text-decoration: none;
+        color: green;
+        font-size: 30px;
+        font-family: Indie Flower;
+        transition: all .3s ease-in-out 0s;
+    }
+    .reply a:hover {
+        font-size: 40px;
+        font-weight: 900;
+    }
+</style>
+<body>
+    <h3>This is CSS Transition </h3>
+    <div class="container">
+        <div class="box">
+            HELLO
+        </div>
+        <div class="box">
+            DOSTO
+        </div>
+        <div class="box">
+            KESA
+        </div>
+        <div class="box">
+            LAGA
+        </div>
+        <div class="box">
+            YE
+        </div>
+        <div class="box">
+            EFFECT
+        </div>
+    </div>
+    <div class="reply">
+        <a href="https://wa.me/9625162488" target="_blank">CLICK HERE TO REPLY !!</a>
+    </div>
+</body>
+</html>
