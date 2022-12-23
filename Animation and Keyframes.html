@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframes</title>
+</head>
+<style>
+    .container {
+        /* display: flex; */
+        background-color: greenyellow;
+    }
+    .box {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+
+        /* this is for naming the ANIMATION  */
+        /* animation-name: Zahid1; */
+        animation: Zahid2;
+        /* this is for how long your ANIMATION is . */
+        animation-duration: 2s;
+        /* this is for how many times your ANITATION run . Also have INFINITE value  */
+        animation-iteration-count: 2;
+        /* by using this  [ FORWARD ]  you can hold after ANIMATION occurs */
+        animation-fill-mode: forwards;
+        /* by using this  [ ALTERNATE]  you can back from start ANIMATION occurs */
+        /* animation-fill-mode: alternate; */
+        animation-timing-function: ease-in-out; 
+        /* { also :: ease-in , ease-out}  */
+        /* this is for delay  */
+        /* animation-delay: 2s; */
+        /* using this you can change direction of ANIMTION { to to from ,, from to to}   */
+        /* animation-direction: reverse; */
+
+        /* ALL IN ONE ANIMATION PROP  */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;  */
+        animation: Zahid3 10s ease-in 1s 4 backwards;
+    }
+
+    /* using this we can what changes occurs using FROM to TO  */
+    @keyframes Zahid3 {
+        0% {
+            background-color: red;
+            height: 10px;
+            width: 10px;
+        }
+        20% {
+            background-color: red;
+            height: 10px;
+            width: 300px;
+        }
+        40% {
+            background-color: orangered;
+            height: 300px;
+            width: 300px;
+        }
+        60% {
+            background-color: orangered;
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+        }
+        80% {
+            background-color: orangered;
+            height: 600px;
+            width: 600px;
+        }
+        100% {
+            background-color: black;
+            height: 10px;
+            width: 10px;
+        }
+    }
+    @keyframes Zahid2 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }        
+        25% {
+            top: 300px;
+            left: 0px;
+        }
+        50% {
+            top: 300px;
+            left: 300px;
+        }
+        75% {
+            top: 0px;
+            left: 300px;
+        }
+        100% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+    @keyframes Zahid1 {
+        from {
+            width: 200px;
+        }
+        to {
+            width: 80%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>

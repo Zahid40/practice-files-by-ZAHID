@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribut And Nth chile  selector</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: block;
+            /* justify-content: center;
+            align-items: center; */
+            padding: 20px;
+            width: 300px;
+            height: 400px;
+            border: 3px red solid;
+            margin :auto ;
+        }
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            padding: 10px;
+            border: red 1px dotted;
+        }
+        a[target='_blank'] {
+            color: rgb(13, 87, 100);
+            font-size: 44px;
+        }
+        
+
+        li:nth-child(2n+1) {
+            color: blue;
+        }
+        li:nth-child(2n) {
+            color: red;
+        }
+        li:nth-child(4) {
+            color: green;
+            font-weight: 600;
+            font-size: larger;
+        }
+        li:nth-child(odd) {
+            background-color: rgba(255, 0, 0, 0.267);
+        }
+        li:nth-child(even) {
+            background-color: rgba(0, 0, 255, 0.308);
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Go to Google</a>
+        <form action="#" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="password" placeholder="Enter your Password">
+            <input type="submit" placeholder="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 2</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+            <li class="item" id="item-6">Item 6</li>
+            <li class="item" id="item-7">Item 7</li>
+            <li class="item" id="item-8">Item 8</li>
+            <li class="item" id="item-9">Item 9</li>
+            <li class="item" id="item-10">Item 10</li>
+        </ul>
+    </div>
+</body>
+</html>

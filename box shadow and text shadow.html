@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text Shadow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: black;
+        font-family: Cookie;
+    }
+    .contaner {
+        display: flex;
+    }
+    .card {
+        border-radius: 80px;
+        background-color: rgba(15, 15, 15, 0.589);
+        padding: 20px;
+        /* border: 10px rgb(34, 34, 34) solid; */
+        margin: 30px;
+
+        /* box-shadow: x-offset Y-offset Blur-Radius Spread-Radius Color ; */
+        box-shadow: 10px 10px 10px 0px rgba(255, 0, 0, 0.719);
+
+        /* how to get shadow inside a box  */
+        /* box-shadow: inset 100px 100px 100px 1px red  ; */
+        /* how to get Multiple shadow  */
+        /* box-shadow: inset 100px 100px 100px 1px red ,6px 10px 100px 1px rgb(255, 255, 255) ; */
+
+        /* box-shadow: inset 2px 3px 10px rgb(241, 24, 24) ,10px 10px 10px 0px rgba(187, 0, 0, 0.719); */
+    }
+
+    h2  {
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    }
+    p {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    }
+    }
+</style>
+<body>
+    <div class="contaner">
+        <div class="card" id="card-1">
+            <h2>Card-1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corrupti neque reiciendis fugit similique fuga inventore esse, vel amet in, quaerat ullam possimus eos explicabo id est maiores quia totam! Repudiandae sunt hic beatae eligendi alias aperiam adipisci? Perspiciatis, quos?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card-2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corrupti neque reiciendis fugit similique fuga inventore esse, vel amet in, quaerat ullam possimus eos explicabo id est maiores quia totam! Repudiandae sunt hic beatae eligendi alias aperiam adipisci? Perspiciatis, quos?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card-3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corrupti neque reiciendis fugit similique fuga inventore esse, vel amet in, quaerat ullam possimus eos explicabo id est maiores quia totam! Repudiandae sunt hic beatae eligendi alias aperiam adipisci? Perspiciatis, quos?</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>Card-4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corrupti neque reiciendis fugit similique fuga inventore esse, vel amet in, quaerat ullam possimus eos explicabo id est maiores quia totam! Repudiandae sunt hic beatae eligendi alias aperiam adipisci? Perspiciatis, quos?</p>
+        </div>
+    </div>
+</body>
+</html>

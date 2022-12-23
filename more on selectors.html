@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+    * {
+        font-size: 30px;
+    }
+
+    /* it effects all praragraphs in a div  */
+    /* div p {
+        background-color: green;
+    } */
+
+    /* but , in this   ( > )  you can direct or just nxt paragraphs in a div  */
+    /* div > p {
+        background-color: red;
+    } */
+
+    /* in this  ( + )  you can target that paragraph which has previous sibling as div  */
+    /* div + p {
+        background-color: blue;
+    } */
+
+</style>
+<body>
+    <h1>this is more on slectors</h1>
+    <div>
+        <ul>
+            <li>
+                <p>m in li</p>
+            </li>
+        </ul>
+        <div>
+            <p>m in div</p>
+        </div>
+    </div>
+    <p>m outside </p>
+</body>
+</html>

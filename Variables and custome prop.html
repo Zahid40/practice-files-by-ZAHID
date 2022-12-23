@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Custom Props.</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        /* margin: 0;
+        padding: 0; */
+    }
+    :root {
+        /* this is we can make variables for any property  */
+        --primary-color : rgba(230, 0, 0, 0.774) ;
+        --sec-color : rgb(3, 58, 110) ;
+    }
+    body {
+        background-color: black;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 400px;
+        background-color: var(--primary-color);
+        margin: auto;
+        padding: 20px;
+        box-shadow: 10px 10px 10px var(--sec-color);
+        
+    }
+    .box {
+        background-color: var(--sec-color);
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

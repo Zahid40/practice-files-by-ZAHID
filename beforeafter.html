@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Psudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: black;
+        color: white;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
+    header::before {
+        background: url(https://source.unsplash.com/WLUHO9A_xik/1600x900) no-repeat center center/cover;
+        content: "";position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: .3;
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        list-style: none;
+        padding: 20px 40px;
+        font-size: 20px;
+        font-family: Chivo Mono;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        /* width: 80%; */
+        margin: 50px;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px white dotted; */
+    }
+    section::before {
+        content: "This is Content BEFORE an element ..";
+        color: red;
+        font-family: Chivo Mono;
+    }
+    section::after {
+        content: "This is Content AFTER an elment..";
+        color: green;
+        font-family: Chivo Mono;
+    }
+    h1 {
+        margin: 20px;
+        font-size: 3rem; 
+        font-family: 'Press Start 2P', cursive;
+        font-weight: 100;
+
+    }
+    p{
+        text-align: center;
+        margin: 20px;
+        font-family: Chivo Mono;
+    }
+    hr {
+        
+        width: 80%;
+        display: block ;
+        margin: auto;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus quibusdam dolorem minus corporis tempore aliquid optio unde earum vel veritatis quia suscipit tenetur, praesentium, a quidem illum. Doloribus, sed. Minus nemo sapiente dolorem velit, delectus aliquid numquam similique molestiae!</p>
+    </section>
+    <hr>
+</body>
+</html>
