@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid with media quarie</title>
+</head>
+<style>
+    .cont {
+        display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav'
+            'section section aside'
+            'footer footer footer'
+            ;
+    }
+    nav {
+            grid-area: nav;
+        }
+        section {
+            grid-area: section;
+        }
+        aside {
+            grid-area: aside;
+        }
+        footer {
+            grid-area: footer;
+        }
+    @media only screen and (max-width: 300px) {
+        body {
+            background-color: red;
+        }
+        span {
+            display: block;
+        }
+        .cont {
+            grid-template-areas: 
+            'nav'
+            'section '
+            'aside'
+            'footer'
+            ;
+        }
+    }
+
+    @media only screen and (min-width:300px) and (max-width: 500px) {
+        body {
+            background-color: yellow;
+        }
+        .cont {
+            grid-template-areas: 
+            'nav'
+            'section '
+            'aside'
+            'footer'
+            ;
+        }
+    }
+
+    @media only screen and (min-width:500px) and (max-width: 900px) {
+        body {
+            background-color: purple;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        body {
+            background-color: green;
+        }
+    }
+
+    .styles {
+        border: 2px black solid;
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div class="cont">
+        <nav class="styles">
+            <span>Home</span>
+            <span>Contact</span>
+            <span>About</span>
+            <span>navi</span>
+        </nav>
+        <section class="styles">
+            <h1>Contant here</h1>
+        </section>
+        <aside class="styles">
+            <h2>Ads here</h2>
+        </aside>
+        <footer class="styles">
+            Copyright Zahid
+        </footer>
+    </div>
+</body>
+
+</html>
