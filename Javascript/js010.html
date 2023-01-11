@@ -7,8 +7,8 @@
     <title>MAnupulating DOM</title>
 </head>
 <body>
-    <div class="container">
-        <ul>
+    <div id="main" class="container">
+        <ul id="nav">
             <li>Home</li>
             <li>About us</li>
             <li>Services</li>
@@ -16,5 +16,27 @@
             <li>Contact us</li>
         </ul>
     </div>
+    <div class="container">
+        <h3>this is another container</h3>
+    </div>
+    <script>
+        // thats how we access DOM(html) Element by Javascript
+        let main = document.getElementById('main');
+        console.log(main);
+
+        // Manupulating DOM element by js 
+
+        // DOM element access through ID
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        console.log(nav.innerHTML);
+        console.log(nav.innerHTML = " <li>Dynamic Element </li> ");
+
+        //DOM element access through CLASS
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+        console.log(container[0]);
+        console.log(container[1]);
+    </script>
 </body>
 </html>
