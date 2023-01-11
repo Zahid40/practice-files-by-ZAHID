@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and if and else conditon
+
+    </title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is String";
+        var string1 = "This is String2";
+        console.log(string1);
+        // in var function variables changable multiple times 2 variables of same name at one time globally
+
+        // use "let" it declares only one variable of unique name globally  ,  scope of this varible only inside "{}" this block  , you can also let same varible inside of that block but its only work inside of that block{}
+        let a = "u"
+        {
+            let a = "u6"
+            console.log(a);
+            let b = 'zz'
+        }
+        console.log(a);
+        // console.log(b);     this caused error because "b" not exist because "b" exists inside a block{}.
+
+        // constant
+        const c = 'This cannt be changed'
+        // c = ' i want to change this ,This cannt be changed'        this throw error because constant can not changeable.
+        console.log(c);
+
+        //if else 
+        let age = 5;
+        if (age > 18) {
+            console.log("You can Drink Water");
+        }
+        else if (age == 7) {
+            console.log("Age is 7");
+        }
+        else if (age == 5) {
+            console.log("Age is 5");
+        }
+        else {
+            console.log("you can Drink Cold drink");
+        }
+
+        // Switch case statement
+        const cups = 44;
+        switch (cups) {
+            case 40:
+                console.log("The value of cups are 40");
+                break;
+
+            case 41:
+                console.log("The value of cups are 41");
+                break;
+
+            case 42:
+                console.log("The value of cups are 42");
+                break;
+
+            case 43:
+                console.log("The value of cups are 43");
+                break;
+
+            default:
+                console.log("The value of cups are none of 40 , 41 , 42 ,43.");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

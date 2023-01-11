@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div>
+        this is about loop
+    </div>
+    <script>
+        console.log("This is loops");
+
+        // for loop
+        let i = 0;
+        // for( initial-condition of element , condition for element , updation of element)
+        for(i=0; i<3 ; i++){
+            console.log(i);
+        }
+
+        let friends = [ 'Jaideep' , 'vipin' , 'Aman' , 'Sonu' , 'R04' , 'Khushi'];
+        for (let index = 0; index < friends.length; index++) {
+            console.log("Hello friend , " + friends[index]);
+        }
+
+        // forEach loop
+        friends.forEach(function f(element) {
+            console.log("Hello Friend , " + element + " to mordern Javascript");
+        });
+        
+        // for of loop
+        for ( element of friends){
+            console.log("Hello Friend , " + element + " to mordern Javascript again");
+        }
+
+        //for in loop
+        let employee = {
+            name : "Zahid",
+            salary : "2" ,
+            channel : "Legendx",
+            city : "New Delhi",
+            Town : "Najafgarh" 
+        }
+        for ( key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]} `);
+        }
+
+        // while loop 
+        let w =0 ;
+        while (w<45) {
+            console.log(` ${w} is less than 45 `);
+            w++;
+        }
+
+        // do while loop
+        let d = 56 ;
+        do {
+            console.log(` ${d} is less than 34 , we are in do while loop `);
+            d++;
+        } while (d<34);
+
+
+
+    </script>
+</body>
+</html>

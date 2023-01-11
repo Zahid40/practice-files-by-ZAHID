@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert , confirm and prompt </title>
+</head>
+<body>
+    <div class="container">
+        <h3>This is the page</h3>
+    </div>
+    <script>
+        //Alert in-browser Javascript
+        alert("using this website you must be a ROBOT , are you ?");
+
+        // Prompt  asking questions to user
+        let name = prompt("What is your name?" , "Guest")
+        console.log(name);
+
+        // Confirm  
+        let deletepost = confirm(" Do you really want to delet this post ?")
+        // console.log(deletepost);
+        if (deletepost) {
+            //code to deleted the post
+            console.log("Your poat has been deleted successfully.");
+        }
+        else {
+            // code for cancle deleted the post
+            console.log("Your poat has not been deleted.");
+        }
+    </script>
+</body>
+</html>

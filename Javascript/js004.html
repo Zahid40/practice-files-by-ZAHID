@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string Function</title>
+</head>
+<body>
+    
+    <script>
+        var str = 'That is String and string is alphabelts';
+        console.log(str);
+
+        // first occurance of substring ( index start at 0,1,2..)
+        var position = str.indexOf('is')
+        console.log(position);
+
+        // Last occurance of substring 
+        position = str.lastIndexOf('is')
+        console.log(position);
+
+        // slicing substing from a string
+        console.log(str[2] + '  sliced char from string');
+        var substr1 = str.slice(1,7) //first to last postion
+        subsrt1 = str.substring(1,8) // same as slice but -ve values also ablicable
+        substr1 = str.substr(1,9) // first no. for start and second for Lenght of string how much exctracted from string
+        console.log(substr1);
+
+        // Repalce word from a string 
+        var Replace = str.replace('string' , 'replaced');
+        console.log(str);
+        console.log(Replace);
+
+        // upper case and lower case 
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // Another way to add string into string (( prefferd use +))
+        var newstring = str.concat(' new string')
+        console.log(newstring);
+
+        //trim white spaces only from start and end of a string
+        var whitespacetrim = '       this content           with whitespacesa             '
+        console.log(whitespacetrim);
+        console.log(whitespacetrim.trim());
+
+        // find which charecter at 
+        var char2 = str.charAt(2);
+        var charcode2 = str.charCodeAt(2); //for print UTF16 code
+        console.log(char2);
+        console.log(charcode2);
+
+    </script>
+</body>
+</html>

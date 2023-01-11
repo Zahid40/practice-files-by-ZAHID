@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <script>
+        let myvar = 34;
+        let myvar2 = "string";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined ;
+
+        // Making an object
+        let employee = {
+            name : "Zahid",
+            salary : 10 ,
+            study : "BCA" ,
+            "study youtube" : "Codewitharry", // if u want give space in key values should be written under quaotes
+
+        }
+        console.log(employee);
+        // write in consol
+        // employee.study
+        // 'BCA'
+        // employee['study youtube']
+        // 'Codewitharry'
+
+
+
+
+
+        // let names = new Array( 14, 2, 36 , "Zahid" ,78 , undefined);               just another way 
+        // let names = new Array(23);      it makes 23 empty elements in array 
+        let names = [ 14, 2, 36 , "Zahid" , 17, undefined];
+        console.log(names.length);
+        names = names.sort();
+        names.push("this is pushed")
+        console.log(names);
+        console.log(names[3]);
+    </script>
+</body>
+</html>
