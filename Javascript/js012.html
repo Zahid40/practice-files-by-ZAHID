@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        This is container
+        Time Now is <span id="time"></span>
     </div>
     <script>
         console.log('this');
@@ -19,11 +19,22 @@
             console.log('Hello , Good Morning' + name  + "," + byeText);
         }
          timeOut = setTimeout(greet, 2000 , " Zahid" , "Take Care" );
-         console.log(timeOut);
+        //  console.log(timeOut);
 
          clearTimeout(timeOut);
 
-         setInterval(greet, 1000 , "Zahid " , "Again");
+         intervalID = setInterval(greet, 1000 , "Zahid " , "Again");
+         clearInterval(intervalID);
+
+         function displaytimetome() {
+            const time = new Date();
+            document.getElementById('time').innerHTML = time ;
+            console.log(time);
+        }
+        // setInterval(displaytimetome, 1000);
+        
+        
+
 
     </script>
 </body>
