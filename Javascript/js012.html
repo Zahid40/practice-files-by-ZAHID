@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript SetTimeOut and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        This is container
+    </div>
+    <script>
+        console.log('this');
+        // setTimeout --> Allows us to run the function once after the interval of time.
+        // clearTimeout --> Allows us to run the function Repeatedly after the interval of time.
+
+        function greet(name , byeText) {
+            console.log('Hello , Good Morning' + name  + "," + byeText);
+        }
+         timeOut = setTimeout(greet, 2000 , " Zahid" , "Take Care" );
+         console.log(timeOut);
+
+         clearTimeout(timeOut);
+
+         setInterval(greet, 1000 , "Zahid " , "Again");
+
+    </script>
+</body>
+</html>
