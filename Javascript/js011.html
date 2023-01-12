@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body {
+            background-color: rgb(87, 0, 168);
+        }
+        .container {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .container h1 {
+            text-align: center;
+            font-weight: 900;
+            font-size: 4rem;
+        }
+        .container p {
+            text-align: center;
+            font-weight: 600;
+            background-color: rgba(129, 1, 1, 0.651);
+            border-radius: 30px;
+            padding: 20px ;
+        }
+        #btn {
+            padding: 10px;
+            font-size: 30px;
+            font-weight: 500;
+            border: 1px white solid ;
+            border-radius: 20px;
+            background-color: rgb(158, 98, 158);
+            
+        }
+        #btn:hover {
+            background-color: purple;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Events ::
+    click
+    contextmenu
+    mouseover / mouseout
+    mousedown / mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoader
+
+    Transitionend -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <button id="btn" onclick="togglehide()">Show/Hide</button>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, recusandae non? Dolorum eligendi, laboriosam aspernatur libero ipsum nobis optio ad fugit atque praesentium corporis natus obcaecati eos modi? Expedita sed consequatur quis amet in earum officiis aspernatur odio, laborum maiores corporis officia, neque molestiae fuga dignissimos quos similique at incidunt quisquam natus. Illo enim labore, quisquam corporis, id quam, nemo voluptas dolore aut nulla ullam ducimus non autem a impedit. Natus, doloremque asperiores tempore obcaecati neque odit incidunt nemo officia qui eius saepe culpa enim ea est corporis, nobis voluptatum expedita quis reprehenderit? Fugit quis accusamus nulla nam quasi. Quasi aut voluptatibus laudantium voluptatem numquam doloremque, fugit omnis? Nostrum vero ea, error harum aspernatur voluptatum quasi delectus corporis est eius iusto, ex suscipit deleniti iure ut culpa itaque debitis, omnis cumque. Vero magni facilis illo aspernatur eos laudantium dolorem iusto vel maxime adipisci consequuntur nobis maiores, officiis quia recusandae praesentium similique ipsam harum. Tenetur aliquam quasi ullam eaque commodi quas repellendus cupiditate maiores laborum fuga doloremque ducimus cumque, consequatur laudantium fugit dolorum suscipit similique. Eveniet in, dolor, sunt vel molestiae sit odit temporibus, qui labore repellendus debitis cum dolorem harum delectus rem molestias velit recusandae minima cupiditate eligendi possimus a?</p>
+    </div>
+    <script>
+        // Onclick event
+        function togglehide(){
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none' ;
+            } else {
+                para.style.display = 'block' ;
+                
+            }
+        }
+        
+        // EventListener
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover' , function run(){
+            // alert('Mouse Inside')
+            console.log('Mouse inside');
+
+        })
+
+        para.addEventListener('mouseout' , function run(){
+            // alert('Mouse Outside the para')
+            console.log('Mouse outside ');
+        })
+
+    </script>
+</body>
+</html>
