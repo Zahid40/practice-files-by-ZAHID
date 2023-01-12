@@ -30,13 +30,28 @@
         let nav = document.getElementById('nav');
         console.log(nav);
         console.log(nav.innerHTML);
-        console.log(nav.innerHTML = " <li>Dynamic Element </li> ");
+        // console.log(nav.innerHTML = " <li>Dynamic Element </li> ");
 
         //DOM element access through CLASS
         let container = document.getElementsByClassName('container');
         console.log(container);
         console.log(container[0]);
         console.log(container[1]);
+
+        // DOM element access through CSS Selector
+        let sel = document.querySelector('.container');
+        console.log("Selector REturn" , sel);
+
+        // let sel1 = document.querySelector('#nav');
+        let sel1 = document.querySelector('#nav>li');
+        console.log("Selector REturn" , sel1);
+
+        let sel2 = document.querySelectorAll('#nav>li');
+        console.log("Selector REturn" , sel2);
+
+        sel2[0].innerHTML = "Zahid"
+        sel2[1].innerHTML = "Friends"
+
     </script>
 </body>
 </html>
