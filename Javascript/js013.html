@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>Date and Time in Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <style>
+        
         body {
-            background-color: red;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(5, 5, 5);
+            font-family: Poiret One ;
         }
+
         .container {
             background-color: white;
-            border-radius: 1rem;
-            padding:  1rem 2rem;
+            border-radius: 2.5rem;
+            border: none;
+            padding-bottom: 7rem;
+            margin: 1rem;
             text-align: center;
+            height: 100%;
+            box-shadow: inset 4px -4px 10px black , inset -4px -4px 10px black;
         }
+
         h1 {
-            font-weight: 900;    
-            font-size: 3rem;        
+            background-color: rgb(255, 0, 0);
+            color: white;
+            border-top-left-radius: 2.5rem;
+            border-top-right-radius: 2.5rem;
+            padding: 3rem 0rem;
+            font-weight: 600;
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgb(71, 0, 0);
+            box-shadow: inset 4px 4px 10px black , inset -4px 4px 10px black;
         }
         #time {
+            display: flex;
+            justify-content: center;
+        }
+        #time , #calender {
             text-align: center;
-            font-size: 6rem;
+            font-size: 5rem;
+            font-weight: 100;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
+
+        }
+        #calender {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin:5rem 0rem ;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>The Current Time</h1>
+        <h1>Current Time</h1>
+        <div id="calender">
+        </div>
         <span id="time"></span>
     </div>
     <script>
@@ -43,32 +74,32 @@
         console.log(newDate);
 
         // let newDate = new Date( Year , Month , Date , Hours , Minutes , Seconds , Miliseconds)
-        let newDate1 = new Date( 3023 , 3 , 2 , 12 , 4 , 34 , 2 )
+        let newDate1 = new Date(3023, 3, 2, 12, 4, 34, 2)
         console.log(newDate1);
 
         let yr = newDate1.getFullYear();
-        console.log("The Year is " , yr);
+        console.log("The Year is ", yr);
 
         let Month = newDate1.getMonth();
-        console.log("The Month is " , Month);
+        console.log("The Month is ", Month);
 
         let date1 = newDate1.getDate();
-        console.log("The Date is " , date1);
+        console.log("The Date is ", date1);
 
         let Day = newDate1.getDay();
-        console.log("The Day is " , Day);
+        console.log("The Day is ", Day);
 
         let Hours = newDate1.getHours();
-        console.log("The Hour is " , Hours);
+        console.log("The Hour is ", Hours);
 
         let Minutes = newDate1.getMinutes();
-        console.log("The Minutes is " , Minutes);
+        console.log("The Minutes is ", Minutes);
 
         let Seconds = newDate1.getSeconds();
-        console.log("The Seconds is " , Seconds);
+        console.log("The Seconds is ", Seconds);
 
         let Millisec = newDate1.getMilliseconds();
-        console.log("The Milliseconds is " , Millisec);
+        console.log("The Milliseconds is ", Millisec);
 
         //settime
         newDate.setMonth(1);
@@ -77,11 +108,20 @@
         console.log(newDate);
 
         //Clock Func
-        setInterval( clock , 1000);
+        setInterval(clock, 1000);
         function clock() {
+            // datefor = new Date();
+            // time.innerHTML = datefor.getHours()+ ":" + datefor.getMinutes() + ":" + datefor.getSeconds();
+            // time.innerHTML = new Date(); 
             datefor = new Date();
-            time.innerHTML = datefor.getHours()+ ":" + datefor.getMinutes() + ":" + datefor.getSeconds();
+            const monthbhi = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "Octuber", "November", "December"];
+
+            time.innerHTML = datefor.getHours() + ":" + datefor.getMinutes() + ":" + datefor.getSeconds();
+            calender.innerHTML = datefor.getDate() + " " + monthbhi[datefor.getMonth()] + " " + datefor.getFullYear();
+
+
         }
     </script>
 </body>
+
 </html>
