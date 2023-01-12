@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in Javascript</title>
+    <style>
+        body {
+            background-color: red;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container {
+            background-color: white;
+            border-radius: 1rem;
+            padding:  1rem 2rem;
+            text-align: center;
+        }
+        h1 {
+            font-weight: 900;    
+            font-size: 3rem;        
+        }
+        #time {
+            text-align: center;
+            font-size: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Current Time</h1>
+        <span id="time"></span>
+    </div>
+    <script>
+        const now = new Date();
+        console.log(now);
+
+        // inside date function put miliseconds fron initial date
+        const initaldt = new Date(0);
+        console.log(initaldt);
+
+        let newDate = new Date("2029-09-08")
+        console.log(newDate);
+
+        // let newDate = new Date( Year , Month , Date , Hours , Minutes , Seconds , Miliseconds)
+        let newDate1 = new Date( 3023 , 3 , 2 , 12 , 4 , 34 , 2 )
+        console.log(newDate1);
+
+        let yr = newDate1.getFullYear();
+        console.log("The Year is " , yr);
+
+        let Month = newDate1.getMonth();
+        console.log("The Month is " , Month);
+
+        let date1 = newDate1.getDate();
+        console.log("The Date is " , date1);
+
+        let Day = newDate1.getDay();
+        console.log("The Day is " , Day);
+
+        let Hours = newDate1.getHours();
+        console.log("The Hour is " , Hours);
+
+        let Minutes = newDate1.getMinutes();
+        console.log("The Minutes is " , Minutes);
+
+        let Seconds = newDate1.getSeconds();
+        console.log("The Seconds is " , Seconds);
+
+        let Millisec = newDate1.getMilliseconds();
+        console.log("The Milliseconds is " , Millisec);
+
+        //settime
+        newDate.setMonth(1);
+        newDate.setFullYear(2023);
+        newDate.setDate(4);
+        console.log(newDate);
+
+        //Clock Func
+        setInterval( clock , 1000);
+        function clock() {
+            datefor = new Date();
+            time.innerHTML = datefor.getHours()+ ":" + datefor.getMinutes() + ":" + datefor.getSeconds();
+        }
+    </script>
+</body>
+</html>
