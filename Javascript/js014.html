@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow function
+    </div>
+    <script>
+        
+        function greet() {
+            console.log("good Morning");
+        }
+        greet();
+
+        // Arrow Function ( Shortcut for function)
+        // let greet1 = ()=> {
+        //     console.log("Good morning in new way");
+        // }
+        let greet1 = () => console.log("Good morning in new way");
+        greet1();
+
+        // let sum = (a,b)=> {
+        //     return  a+b;
+        // };
+        let sum = (a,b) => a+b;
+        let half = a => a/2;
+        // console.log(sum(34 , 56)); 
+        // console.log(half(56));
+
+        setTimeout(() => {
+            console.log("Good Morning by settimeout");
+        }, 3000);
+        
+
+        //if u use Function over (student) then {this.greetings} is undefined because function restricts .
+        // but if u use Arrow Function then (this.greetings) takes his value from parent(Obj1).
+        let Obj1 = {
+            greetings : "Good afternoon",
+            names : ["Zahid" , "JD" , "Sonu" , "CWH" , "Vip dakku"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greetings + " have to wake up" + (student));
+                })
+            }
+        }
+        Obj1.speak();
+    </script>
+</body>
+</html>
