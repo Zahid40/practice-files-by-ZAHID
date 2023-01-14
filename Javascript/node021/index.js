@@ -7,7 +7,6 @@ const home = fs.readFileSync('index.html');
 const contact = fs.readFileSync('contact.html');
 const about = fs.readFileSync('about.html');
 const servises = fs.readFileSync('servises.html');
-const err = fs.readFileSync('err.html');
 
 const server = http.createServer((req , res)=> {
     console.log(req.url);
