@@ -1,0 +1,81 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.795);
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+body::before {
+    content: "";
+    z-index: -1;
+    opacity: .8;
+    background: url('/static/bg11.jpg') left ;
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    background-color: rgb(158, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    /* border-bottom-left-radius: 100% ; */
+    border-bottom-right-radius: 100% ;
+}
+li {
+    list-style: none;
+    padding: 1rem;
+}
+a , .btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+h1 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+input , textarea , label , .btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+label {
+    border: none;
+}
+textarea{
+    width: 45%;
+}
+.container {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.btn {
+    background-color: rgb(158, 0, 0);
+    display: block;
+    margin:  1rem auto;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+}
+
+
+
+

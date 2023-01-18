@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>This is Pug</title> -->
+    <title>#{title} #{message}</title>
+    style 
+       include ../static/index.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/"> Home</a></li>
+            <li><a href="/"> About</a></li>
+            <li><a href="/"> Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+
+        <h1>Get 100 Dollars instant , Login Now</h1>
+        <!-- <p>
+            | #{content}
+        </p> -->
+        <p>
+            | #{message}
+        </p>
+
+        <div class="container">
+            <form action="/" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter Your Age">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" name="gender" placeholder="Enter Your Gender">
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter Your Contact Number">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="10" rows="2" placeholder="Enter Your Address"></textarea>
+                <label for="more">More About You</label>
+                <textarea name="more" id="more" cols="10" rows="2" placeholder="More About you ..."></textarea>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
