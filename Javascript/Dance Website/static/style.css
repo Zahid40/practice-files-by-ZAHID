@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Pacifico&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Changa', sans-serif;
+}
+body {
+    background-color: black;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ctitle%3Ecursor-link%3C/title%3E%3Cg%3E%3Ccircle cx='32' cy='32' r='30' opacity='.8'%3E%3C/circle%3E%3Cpath d='M30.828 28.172l-.585-.586a2 2 0 0 1 0-2.828l6.171-6.171a2 2 0 0 1 2.828 0l6.171 6.171a2 2 0 0 1 0 2.828l-6.171 6.171a2 2 0 0 1-2.828 0l-.586-.585' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/path%3E%3Cpath d='M33.172 35.828l.585.586a2 2 0 0 1 0 2.828l-6.171 6.171a2 2 0 0 1-2.828 0l-6.171-6.171a2 2 0 0 1 0-2.828l6.171-6.171a2 2 0 0 1 2.828 0l.586.585' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/path%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M27 37l10-10'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") 32 32, pointer;
+
+}
+
+/* Navbar */
+#navbar {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between
+}
+#logo {
+    background: center / cover no-repeat url("https://media.rockstargames.com/rockstargames-newsite/uploads/9f66b0ea8ba22711633d59703367d5daa37d2733.jpg");
+    height: 120px;
+    width: 120px;
+    margin: 1rem;
+}
+#navbar ul{
+    display: flex;
+    justify-content: right;
+    padding: 2rem;
+}
+#navbar li {
+    list-style: none;
+    width: 8.8rem;
+    padding: .8rem;
+    margin: 1.5rem .8rem;
+    background-color: rgb(27, 27, 27);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 1px 1px rgb(82, 0, 0);
+    transition: all .7s;
+
+}
+#navbar li:hover {
+    background-color:rgb(133, 0, 0) ;
+    box-shadow: 0px 0px 70px 20px rgb(82, 0, 0);
+
+}
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor:pointer;
+    padding: .8rem;
+}
+
+/* Intro section  */
+#introsect {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#introsect::before {
+    content: "";
+    z-index: -1;
+    height: 600px;
+    width: 100%;
+    background: center center / cover no-repeat url(https://cdn.pixabay.com/photo/2017/06/02/17/47/friendship-2366955_960_720.jpg);
+    opacity: .6;
+    filter: blur(3px);
+    position: absolute;
+
+}
+#introsect h1 , p {
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+#introsect h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+#introsect h1 span {
+    color: red;
+}
+#introsect p {
+    font-size: 1.1rem;
+    width: 800px;
+}
+
+/* sponsors */
+#sponsors {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(0, 156, 143);
+}
+
+/* Footer */
+#footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(71, 0, 62);
+}

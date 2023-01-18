@@ -1,0 +1,17 @@
+{
+  "name": "zahid-dance-academy",
+  "version": "1.0.0",
+  "description": "This is dance website prototype",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zahid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}
