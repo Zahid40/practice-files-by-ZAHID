@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Rubik+Vinyl&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,21 +8,48 @@
 }
 body {
     background-color: black;
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ctitle%3Ecursor-link%3C/title%3E%3Cg%3E%3Ccircle cx='32' cy='32' r='30' opacity='.8'%3E%3C/circle%3E%3Cpath d='M30.828 28.172l-.585-.586a2 2 0 0 1 0-2.828l6.171-6.171a2 2 0 0 1 2.828 0l6.171 6.171a2 2 0 0 1 0 2.828l-6.171 6.171a2 2 0 0 1-2.828 0l-.586-.585' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/path%3E%3Cpath d='M33.172 35.828l.585.586a2 2 0 0 1 0 2.828l-6.171 6.171a2 2 0 0 1-2.828 0l-6.171-6.171a2 2 0 0 1 0-2.828l6.171-6.171a2 2 0 0 1 2.828 0l.586.585' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3C/path%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M27 37l10-10'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") 32 32, pointer;
-
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+body::-webkit-scrollbar-track-piece{
+    background-color: rgb(0 0 0);
+    border-radius: 2rem;
+}
+body::-webkit-scrollbar-track{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #490000;
+    border-radius: 2rem;
+    height: 30px;
 }
 
 /* Navbar */
 #navbar {
+    width: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    /* position:fixed; */
 }
 #logo {
     background: center / cover no-repeat url("https://media.rockstargames.com/rockstargames-newsite/uploads/9f66b0ea8ba22711633d59703367d5daa37d2733.jpg");
     height: 120px;
     width: 120px;
     margin: 1rem;
+}
+#logo span {
+    color: rgb(255, 0, 0);
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 900;
+    top: 100px;
+    left: 42px;
+
 }
 #navbar ul{
     display: flex;
@@ -79,6 +107,7 @@ body {
 #introsect h1 , p {
     text-align: center;
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    line-height: 90%;
 }
 #introsect h1{
     font-size: 4rem;
@@ -88,20 +117,138 @@ body {
     color: red;
 }
 #introsect p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     width: 800px;
+}
+
+
+/* missions */
+#missions {
+    background-color: rgb(0, 0, 0);
+    z-index: -2;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    padding: 1rem;
+}
+#missions h1 , #sponsors h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    cursor: pointer;
+    line-height: 90%;
+}
+#missions h1:hover {
+    text-decoration: dashed;
+}
+.miss {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem;
+
+}
+.miss h2 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    line-height: 80%;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+}
+.miss p {
+    font-size: 1.2rem;
+    color: white;
+    width: 22rem;
+    opacity: 0;
+}
+.miss1:hover p {
+    opacity: 1;
+}
+
+.miss1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 30%;
+    text-align: center;
+    border-radius: 2rem;
+    border: 1px white solid;
+    padding: 1rem;
+    margin: 1rem;
+    height: 300px;
+    transition: all .5s;
+
+}
+.miss1:hover {
+    box-shadow: 0px -80px 10px 1000px rgba(15, 15, 15, 0.781) inset , 0px 0px 100px 10px rgb(15, 15, 15) , 0px 0px 50px 10px rgb(34, 34, 34);
+    width: 40%;
+}
+#submis1 {
+    background:center center / cover no-repeat url(https://png.clipart.me/previews/246/dance-vector-salsa-dancing-25489.png);
+}
+#submis2{
+    background:center center / cover no-repeat url(https://static.vecteezy.com/system/resources/thumbnails/000/167/028/small/tap_dance_DFM3-01.jpg);
+}
+#submis3{
+    background:center center / cover no-repeat url(https://static.vecteezy.com/system/resources/previews/000/166/852/original/couple-dressed-in-1940s-fashion-dancing-a-tap-dance-vector-illustration.jpg);
 }
 
 /* sponsors */
 #sponsors {
-    height: 300px;
+    height:auto;
     width: 100%;
-    background-color: rgb(0, 156, 143);
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
 }
+.spondiv {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+    padding:  2rem 1rem 1rem 2rem;
+}
+.spondiv img {
+    height: 60px;
+    padding-bottom: .8rem;
+}
+
 
 /* Footer */
 #footer {
-    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: auto;
     width: 100%;
-    background-color: rgb(71, 0, 62);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#footerlogo {
+    background: center / cover no-repeat url("https://media.rockstargames.com/rockstargames-newsite/uploads/9f66b0ea8ba22711633d59703367d5daa37d2733.jpg");
+    height: 400px;
+    width: 400px;
+}
+#rdas {
+    color: red;
+    font-size: 22rem;
+    font-family: 'Rubik Vinyl';
+    font-weight: 900;
+    position: relative;
+    line-height: 1%;
+    top: 53px;
+    right: -8px;
+    opacity: .1;
+}
+#copy {
+    z-index: 1;
+    font-size: 1.2rem;
 }
