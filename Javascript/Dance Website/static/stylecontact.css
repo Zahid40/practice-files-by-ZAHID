@@ -1,0 +1,80 @@
+.contact {
+    height: auto;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+.contact h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    opacity: 1;
+    line-height: 70%;
+    margin-bottom: 1rem;
+}
+.form {
+    display: flex;
+    height: 600px;
+    width: 70%;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 5rem;
+    padding: .5rem;
+    box-shadow: 0px 0px 20px 10px black inset;
+
+}
+.form::before {
+    content: "";
+    z-index: -1;
+    height: 600px;
+    width: 67%;
+    background: center / cover no-repeat url("https://www.icegif.com/wp-content/uploads/coffin-dance-icegif.gif");
+    opacity: .3;
+    filter: blur(4px);
+    position: absolute;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 50px 10px black inset;
+
+}
+.form input{
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.356);
+    text-shadow: 1px 1px 10px rgb(141, 141, 141);
+    box-shadow: 0px 0px 20px 10px black;
+    padding: 2px 8px;
+    width: 40%;
+}
+.form textarea {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.356);
+    text-shadow: 1px 1px 10px rgb(141, 141, 141);
+    box-shadow: 0px 0px 20px 10px black;
+    padding: 2px 8px;
+}
+.form label {
+    font-size: 2rem;
+    line-height: 80%;
+    text-shadow: 1px 1px 10px rgba(253, 0, 0, 0.623);
+}
+.form input::placeholder , textarea::placeholder{
+    color: rgb(105, 105, 105);
+    text-shadow: 1px 1px 10px black;
+    font-weight: 900;
+}

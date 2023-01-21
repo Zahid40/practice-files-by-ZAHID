@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/index.js") 
+
+block style 
+    style 
+         include ../static/style.css
+
+block content
+    
+    section#introsect 
+       h1  
+        |Welcome To 
+        span R
+        |ockstar 
+        span D
+        |ance 
+        span A
+        |cademy
+       p Eat.Sleep.Dance.Repeat
+    section#missions 
+       h1 Dance Type
+       div.miss 
+        div.miss1#submis1 
+          h2 Retro
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero praesentium animi tenetur  veritatis expedita fugit nam impedit deleniti minima!
+        div.miss1#submis2
+          h2 Hip-Hop
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero praesentium animi tenetur  veritatis expedita fugit nam impedit deleniti minima!
+        div.miss1#submis3
+          h2 Classical
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero praesentium animi tenetur  veritatis expedita fugit nam impedit deleniti minima!
+    section#sponsors
+       h1 Our Sponsors
+       div.spondiv
+        img(src='https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg', alt='')
+        img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/JioSaavn_Logo.svg/1280px-JioSaavn_Logo.svg.png', alt='')
+        img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Music_logo.svg/2560px-Apple_Music_logo.svg.png', alt='')
+        img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/YouTube_Music_full_logo.svg/1280px-YouTube_Music_full_logo.svg.png', alt='')
