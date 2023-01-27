@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#9d4edd">
+    <title>Map</title>
+    <script src="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.js"></script>
+    <link href="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.css" rel="stylesheet" />
+    <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #map {
+            border-radius: 2rem;
+            margin: 2rem;
+            padding: 1rem;
+            height: 85vh;
+            width: 99%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+<script src="index.js"></script>
+<script>
+    const key = 's3hkCUpLpKMH5MdCiexa';
+    const map = new maplibregl.Map({
+        container: 'map', // container's id or the HTML element in which MapLibre GL JS will render the map
+        style: `https://api.maptiler.com/maps/hybrid/style.json?key=${key}`, // style URL
+        center: [77.216721, 28.644800], // starting position [lng, lat]
+        zoom: 3, // starting zoom
+    });
+    map.addControl(new maplibregl.NavigationControl(), 'top-right');
+</script>
+
+</html>
