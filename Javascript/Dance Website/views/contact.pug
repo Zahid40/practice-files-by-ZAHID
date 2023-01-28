@@ -11,14 +11,17 @@ block style
 block content
     .contact
         h1 Contact Us
-        .form 
+        
+        form(action="/contacts", method="post" class="form")  
             label(for='name') Name
             input(type='text', name='name', placeholder='Enter Your name')
             label(for='age') Age
             input(type='number', name='age', placeholder='Enter Your age')
             label(for='gender') Gender 
             input(type='gender', name='gender', placeholder='Enter Your gender')
-            label(for='E-mail') E-mail Id
-            input(type='E-mail', name='E-mail', placeholder='Enter Your E-mail')
+            label(for='email') E-mail Id
+            input(type='E-mail', name='email', placeholder='Enter Your E-mail')
             label(for='more') More Information
             textarea#more(name='more', cols='60', rows='2' placeholder="More Information About Yourself")
+            button(class="btn")
+                | Submit

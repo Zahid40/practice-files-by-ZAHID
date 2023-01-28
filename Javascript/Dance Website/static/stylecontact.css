@@ -78,3 +78,20 @@
     text-shadow: 1px 1px 10px black;
     font-weight: 900;
 }
+
+.btn {
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    border-radius: 1.5rem;
+    border: 0px ;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: white;
+    color: red;
+    font-weight: 900;
+
+}
