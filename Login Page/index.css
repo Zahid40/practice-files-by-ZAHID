@@ -69,6 +69,6 @@
 #logbtn:hover {
     background-color: rgb(143, 2, 161);
     color: white;
-    box-shadow: 1px 1px 0px black;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
 }
 
