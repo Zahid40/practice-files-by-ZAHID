@@ -54,7 +54,7 @@
 
 }
 .elements ::-webkit-input-placeholder {
-    color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
 }
 
 #logbtn {
