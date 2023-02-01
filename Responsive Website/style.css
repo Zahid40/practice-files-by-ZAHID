@@ -1,0 +1,87 @@
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;  
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    background-color: #dde1e7;
+    width: 100%;
+    display: grid;
+    grid: auto-flow dense/ 1fr 1fr 1fr;
+}
+#logo{
+    border-radius: 100%;
+    height: 7rem;
+    margin: 1rem;
+    cursor: pointer;
+    justify-self: start;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+
+}
+.navlist {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-self: center;
+
+}
+.navlist li {
+    font-size: 1.11rem;
+    font-weight: 700;
+    width: 7rem;
+    padding: .5rem;
+    margin: .5rem;
+    /* background-color: rgb(243 255 243); */
+    background-color: #dde1e7;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+.navlist li:hover {
+    background-color: rgb(243 255 243);
+    box-shadow: -2px -2px 4px rgba(255,255,255,0.45), 2px 2px 4px rgba(94,104,121,0.3);
+
+}
+.navlist li a{
+    text-decoration: none;
+    color: #396c00;
+}
+.rightnav {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-self: end;
+    margin: 1.5rem;
+}
+.rightnav input {
+    border: none;
+    padding: .6rem;
+    font-size: 1.1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: #dde1e7;
+    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    outline: none;
+    text-shadow: 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+
+
+.btn {
+    border: none;
+    padding: .3rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: #dde1e7;
+    box-shadow:  -5px -5px 9px rgba(255,255,255,0.45),  5px 5px 9px rgba(94,104,121,0.3);
+}
+.btn:hover{
+    background-color: rgb(243 255 243);
+    box-shadow: -2px -2px 4px rgba(255,255,255,0.45), 2px 2px 4px rgba(94,104,121,0.3);
+}
