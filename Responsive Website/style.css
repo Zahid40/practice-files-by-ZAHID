@@ -57,6 +57,9 @@ body{
     text-decoration: none;
     color: #396c00;
 }
+.navlist li a:hover {
+    color: blue;
+}
 .rightnav {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +92,7 @@ body{
     box-shadow:  -5px -5px 9px rgba(255,255,255,0.45),  5px 5px 9px rgba(94,104,121,0.3);
 }
 .btn:hover{
+    color: blue;
     background-color: rgb(243 255 243);
     box-shadow: -2px -2px 4px rgba(255,255,255,0.45), 2px 2px 4px rgba(94,104,121,0.3);
 }
@@ -162,11 +166,6 @@ body{
 }
 
 /* about  */
-.profile {
-    /* filter: drop-shadow(-5px -5px 9px rgb(230, 24, 24)); */
-
-}
-
 .about-main{
     display: flex;
     width: 80%;
@@ -174,17 +173,6 @@ body{
     border-radius: 2rem;
     box-shadow:  -5px -5px 9px rgba(255, 255, 255, 0.692),  5px 5px 9px rgba(70, 76, 85, 0.5);
 }
-    .profile::before{
-        content: "";
-        width: 17rem;
-        height: 17rem;
-        border-radius: 100%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-
-        box-shadow:  -5px -5px 9px rgba(255, 255, 255, 0.692),  5px 5px 9px rgba(70, 76, 85, 0.5);
-    }
 
 .profile {
     height: 15rem;

@@ -1,0 +1,43 @@
+@media screen and (max-width:767px) {
+    .navbar ,footer{
+        grid: auto-flow dense/ 1fr 1fr;
+    }
+    #logo{
+        height: 6rem;
+        margin: 1rem;
+        justify-self: start;
+    }
+    .navlist {
+        display: none;
+    }
+    .rightnav{
+        display: none;
+    }
+    .about-main {
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        padding: 1rem;
+    }
+    .about-main p {
+        width: 100%;
+        overflow: scroll;
+    }
+    .mapp {
+        flex-direction: column;
+    }
+    .mapouter {
+        height: 50vh;
+        padding: 1.5rem;
+    }
+    .gmap_canvas {
+        height: 40vh;
+    }
+    .address p , .about-main p{
+        padding: 1rem;
+    }
+    footer #logo {
+        height: 10rem;
+    }
+
+}
