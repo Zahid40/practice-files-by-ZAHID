@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness fly</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:ital@1&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Paytone One;
+    }
+
+    body {
+      height: auto;
+      max-width: 100%;
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+
+    }
+
+    .box1 {
+      height: 700px;
+      width: 100%;
+      margin: 0px;
+      padding: 10px;
+      border: 0px;
+      background: url(https://wallpapers.com/images/file/spider-man-eating-4k-2pfz2wtg6fugbhr9.jpg);
+      background-size: cover;
+
+    }
+
+    .logo {
+      /* border: 2px black solid; */
+      display: inline-block;
+      position: absolute;
+      left: 15px;
+      top: 7px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .mid {
+      display: block;
+      width: 50%;
+      margin: 20px auto;
+      /* border: green 2px solid; */
+    }
+
+    .navbar {
+      list-style: none;
+      display: inline-block;
+      margin: auto;
+      padding: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: rgba(0, 0, 0, 0.571);
+      border-radius: 100px;
+    }
+
+    .navbar li {
+      display: inline-block;
+      padding-left: 23px;
+      margin: auto;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 200;
+      font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: red;
+    }
+
+    .end {
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      /* border: purple 2px solid; */
+    }
+
+    .btn {
+      color: white;
+      font-size: 15px;
+      padding: 20px 30px;
+      background-color: rgba(0, 0, 0, 0.661);
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      color: red;
+      background-color: black;
+    }
+
+    .say {
+      background-color: rgba(0, 0, 0, 0.889);
+      border-radius: 100%;
+      display: inline-block;
+      text-align: center;
+
+      position: absolute;
+      left: 30px;
+      top: 180px;
+      width: 400px;
+      height: 400px;
+      color: white;
+    }
+
+    .text {
+      font-family: Caveat;
+      font-size: 20px;
+      position: relative;
+      top: 130px;
+      left: 20px;
+      width: 350px;
+    }
+
+    span {
+      color: red;
+      font-family: Caveat;
+    }
+
+    h3 {
+      color: grey;
+      font-family: Caveat;
+      font-weight: 800;
+    }
+
+    .box2 {
+      height: 600px;
+      width: 100%;
+      background: url(https://as1.ftcdn.net/v2/jpg/01/34/11/58/1000_F_134115811_zDBMdIni0jDuAMVpFsovAK9H3xUcrTMg.jpg);
+      background-size: cover;
+    }
+
+    .contform {
+      border-top: 5px rgb(0, 162, 255) solid;
+      border-radius: 40px;
+      display: inline-block;
+      height: 404px;
+      width: 1000px;
+      position: relative;
+      top: 100px;
+      left: 200px;
+    }
+
+    .blur {
+      background: rgba(46, 140, 177, 0.151);
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      display: inline-block;
+      backdrop-filter: blur(4px);
+      height: 400px;
+      width: 600px;
+      padding: 20px;
+    }
+
+    .blur h2 {
+      font-family: Paytone One;
+      color: rgb(255, 0, 55);
+      text-align: center;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 0px;
+      cursor: pointer;
+    }
+
+    .spidergif {
+      background: url(https://s11.favim.com/orig/7/770/7706/77060/far-from-home-marvel-gif-Favim.com-7706030.gif);
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      width: 400px;
+      position: absolute;
+      right: 0px;
+      /* top: 850px;
+      right: 100px; */
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    .form-group input {
+      background-color: rgba(0, 0, 0, 0.212);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      display: block;
+      width: 70%;
+      border: 1px solid rgb(0, 162, 255);
+      margin: 8px auto;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 40px;
+    }
+
+    .form-group input:hover {
+      color: rgb(255, 0, 55);
+      border: 2px rgb(255, 0, 55) solid;
+      width: 80%;
+    }
+
+    .blur form button {
+      font-size: 20px;
+      display: block;
+      margin: auto;
+      width: 70%;
+    }
+
+    .blur form button:hover {
+      width: 80%;
+    }
+    footer {
+      background-color: black;
+    }
+    .zahid {
+      font-family: Paytone One;
+      font-weight: 200;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <header>
+      <div class="logo">
+        <a href="#"><img src="https://cdn.pixabay.com/photo/2019/06/17/22/21/spiderman-4281071_1280.png" alt=""></a>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Deadpool</a></li>
+          <li><a href="#" class="active">Spiderman</a></li>
+          <li><a href="#">Creater</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="end">
+        <button class="btn">Call me</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="say">
+      <div class="text">
+        Hey !! , I am Spider-Man and I recently Start this Because Nobody now me after <span>Doctor Strange
+          mess</span>So
+        , here
+        I am If you need Any Help Contact ME ! <h3>Your Frindly Neibourhood / robinhood <span>SPIDERMAN</span></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box2">
+    <div class="contform">
+      <div class="spidergif"></div>
+      <div class="blur">
+        <h2>Join US !!!!!</h2>
+        <form action="noaction.php">
+          <div class="form-group">
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Age">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Gender">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="E-mail">
+          </div>
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<footer><span class="zahid">thisisZAHID 2022</span>
+</footer>
+
+</html>
