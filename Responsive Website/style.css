@@ -10,12 +10,26 @@
 body{
     background-color: black;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+
+}
 .navbar ,footer{
     background-color: #dde1e7;
     width: 100%;
     display: grid;
     grid: auto-flow dense/ 1fr 1fr 1fr;
     
+}
+.logomaker{
+    display: flex;
+    align-items: center;
+}
+.logomaker span {
+    width: 20px;
+    line-height: 1.3rem;
 }
 #logo{
     border-radius: 100%;
@@ -34,7 +48,6 @@ body{
     list-style-type: none;
     align-items: center;
     justify-content: center;
-
 }
 .navlist li {
     font-size: 1.11rem;
@@ -95,6 +108,12 @@ body{
     color: blue;
     background-color: rgb(243 255 243);
     box-shadow: -2px -2px 4px rgba(255,255,255,0.45), 2px 2px 4px rgba(94,104,121,0.3);
+}
+/* instagram feed  */
+.instagram {
+    background-color: #dde1e7;
+    display: flex;
+    
 }
 
 /* map  */
@@ -168,8 +187,10 @@ body{
 /* about  */
 .about-main{
     display: flex;
+    justify-content: space-around;
     width: 80%;
     margin: 2rem;
+    padding: 2rem;
     border-radius: 2rem;
     box-shadow:  -5px -5px 9px rgba(255, 255, 255, 0.692),  5px 5px 9px rgba(70, 76, 85, 0.5);
 }
@@ -177,12 +198,10 @@ body{
 .profile {
     height: 15rem;
     width: 15rem;
-    margin: 2rem;
     border-radius: 100%;
     box-shadow:  -5px -5px 9px rgba(255, 255, 255, 0.692),  5px 5px 9px rgba(70, 76, 85, 0.5);
 }
 .about-main p {
-    display: inline;
     width: 75%;
 }
 
@@ -191,7 +210,7 @@ body{
 footer {
     position: relative;
     bottom: 0;
-    height: 60vh;
+    height: 20rem;
 }
 footer #logo {
     height: 15rem;
