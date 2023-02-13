@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+    transition: all .5s;
 }
 .container {
     display: flex;
@@ -16,6 +17,10 @@
     filter: saturate(1.2) contrast(2.5);
 }
 .box {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 33rem;
     background-color: rgba(255, 255, 255, 0.253);
     color: white;
     backdrop-filter: blur(10px);
@@ -72,8 +77,37 @@
     box-shadow: 1px 1px 10px rgb(255, 255, 255);
 }
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:500px) {
     .box {
-        scale: .7;
+        height: 20rem;
+        width: 20rem;
+        border-radius: 46% 54% 38% 62% / 32% 37% 63% 68% ;
+        padding: 2rem;
+        box-shadow: 0px 0px 50px 0px black; 
+
+    }
+    #loginhed {
+        font-size: 3rem;
+    }
+    .elements input {
+        width: 190px;
+    margin: .5rem 0rem .5rem .5rem;
+    padding: .6rem;
+        
+        font-weight: 600;
+        font-size: .8rem;
+    }
+    label i {
+        scale: .6;
+    }
+    #logbtn {
+        padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+        background-color: wheat;
+        font-size: 1.02rem;
+        font-weight: 900;
+        border: none;
+        box-shadow: 0px 0px 4px black;
     }
 }
