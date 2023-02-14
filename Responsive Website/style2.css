@@ -2,6 +2,10 @@
     .navbar ,footer{
         grid: auto-flow dense/ 1fr 1fr;
     }
+    .navbar {
+        display: flex;
+        transition: all .5s;
+    }
     #logo{
         height: 6rem;
         margin: 1rem;
@@ -9,9 +13,13 @@
     }
     .navlist {
         display: none;
+        flex-direction: column;
     }
     .rightnav{
         display: none;
+    }
+    .dispalychanger{
+        display: flex;
     }
     .about-main {
         flex-direction: column;
@@ -23,6 +31,15 @@
         width: 100%;
         overflow: scroll;
         height: 50%;
+    }
+    .burger {
+        display: inline-block;
+    }
+    .instagram {
+        background-color: #dde1e7;
+        display: flex;
+        flex-direction: column;
+        
     }
     .mapp {
         flex-direction: column;
