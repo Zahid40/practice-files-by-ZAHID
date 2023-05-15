@@ -1,0 +1,17 @@
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+
+.text-center{
+    text-align: center;
+}
+.gold{
+    color: #D4AF37;
+    font-weight: 900;
+}
