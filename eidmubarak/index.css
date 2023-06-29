@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+}
+body,html{
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙂</text></svg>")
+      16 0, auto;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    transition: all .4s;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.main{
+    background: linear-gradient(272deg, #ff0000, #fff400, #ff0090, #ff0064, #5200ff, #00a4ff);
+    background-size: 1200% 1200%;
+
+    animation: AnimationName 30s ease infinite;
+    animation-play-state: running;
+    height: 100vh;
+    width: 100%;
+    /* background:linear-gradient(red , white); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 100px; */
+}
+@keyframes AnimationName {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+
+
+.main2{
+    animation-play-state: paused;
+    /* background:linear-gradient(black , white); */
+    background-image: url(/images/sky.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+button{
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😃</text></svg>")
+      16 0, auto;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    border:2px white solid;
+    box-shadow: 10px 10px 35px 4px black;
+    text-shadow: 2px 2px 20px yellow;
+}
+.butdisaper{
+    display: none;
+}
+
+.moon{
+    display: none;
+    height: 400px;
+    width: 400px;
+    background-image: url(/images/moon.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    opacity: 0;
+}
+.moonanim{
+    opacity: 0;
+    display: inline;
+    /* left: 0; */
+    animation-name: example;
+    animation-delay: 3s;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+}
+@keyframes example {
+    0%{
+        transform:rotate(1400deg)
+                  translateX(-565px)
+                  translateY(665px)
+                  rotate(-60deg);
+        opacity: 50;
+      
+      }
+      100%{
+        transform:rotate(0deg)
+                 translateX(30px)
+                 translateY(-260px)
+                  rotate(0deg);
+        opacity: 100;
+        filter: drop-shadow(20px 15px 20px rgba(255, 255, 255, 0.445));
+      }
+  }
+
+.txt{
+    text-align: center;
+    color: white;
+    display: none;
+    text-shadow: 2px 2px 20px yellow;
+
+    /* align-self:flex-end; */
+}
+.txt h1{
+    font-size: 80px
+}
+.txt h2{
+    font-size: 40px
+}
+.txt span{
+    font-size: 100px;
+    display: block;
+}
+.txt a{
+    color: white;
+    text-decoration: none;
+    font-size: 44px;
+}
+.txt a i{
+    padding: 10px;
+}
+.txt2{
+    opacity: 0;
+    text-align: center;
+    display: block;
+    animation-name: textanima;
+    animation-delay: 7s;
+   animation-duration: 4s;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+}
+@keyframes textanima {
+    0%{
+        opacity: 0;
+        transform: translateY(500px);
+      }
+      100%{
+        opacity: 100;
+        transform: translateY(100px);
+      }
+  }
+
