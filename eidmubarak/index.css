@@ -75,7 +75,7 @@ button{
     display: inline;
     /* left: 0; */
     animation-name: example;
-    animation-delay: 3s;
+    animation-delay: 1s;
    animation-duration: 3s;
    animation-iteration-count: 1;
    animation-timing-function: ease-in-out;
@@ -131,7 +131,7 @@ button{
     text-align: center;
     display: block;
     animation-name: textanima;
-    animation-delay: 7s;
+    animation-delay: 4s;
    animation-duration: 4s;
    animation-iteration-count: 1;
    animation-timing-function: ease-in-out;
