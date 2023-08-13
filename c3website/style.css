@@ -5,7 +5,6 @@
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
     transition: all .5s;
-
 }
 body{
     background-color: black;
@@ -21,8 +20,7 @@ body{
     background-color: #dde1e7;
     width: 100%;
     display: grid;
-    grid: auto-flow dense/ 1fr 1fr 1fr;
-    
+    grid: auto-flow dense/ 1fr 1fr 1fr; 
 }
 .logomaker{
     display: flex;
@@ -39,7 +37,6 @@ body{
     cursor: pointer;
     justify-self: start;
     box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
-
 }
 #logo:hover {
     box-shadow: -2px -2px 4px rgba(255,255,255,0.45), 2px 2px 4px rgba(94,104,121,0.3);
@@ -48,7 +45,7 @@ body{
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 .navlist li {
     font-size: 1.11rem;
@@ -56,7 +53,6 @@ body{
     width: 7rem;
     padding: .5rem;
     margin: .5rem;
-    /* background-color: rgb(243 255 243); */
     background-color: #dde1e7;
     text-align: center;
     border-radius: 2rem;
@@ -67,35 +63,12 @@ body{
     box-shadow: -2px -2px 4px rgba(255,255,255,0.45), 2px 2px 4px rgba(94,104,121,0.3);
 
 }
-.navlist li a{
-    text-decoration: none;
-    color: #396c00;
-}
-.navlist li a:hover {
+.navlist li:hover a{
     color: blue;
 }
-.rightnav {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    margin: 1.5rem;
-}
-.rightnav input {
-    border: none;
-    padding: .6rem;
-    font-size: 1.1rem;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    background-color: #dde1e7;
-    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
-    outline: none;
-    text-shadow: 5px 5px 9px rgba(94,104,121,0.3);
-}
-.rightnav input :active{
-    box-shadow: inset -2px -2px 4px rgba(255,255,255,0.45), inset 2px 2px 4px rgba(94,104,121,0.3);
-    outline: none;
+.navlist li a{
+    text-decoration: none;
+    color: #000000;
 }
 .btn {
     border: none;
@@ -115,12 +88,6 @@ body{
     position: absolute;
     top: 45px;
     right: 23px;
-}
-.line {
-    width: 33px;
-    background-color: black;
-    height: 3px;
-    margin: 5px 2px;
 }
 /* instagram feed  */
 .instagram {
@@ -155,7 +122,7 @@ body{
     outline: none;
 }
 .gmap_iframe {
-    height:400px!important;
+    height:100%!important;
     
 }
 .address , .about {
