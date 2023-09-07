@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            border: 0px;margin: 0px;padding: 0px;
+        }
+    </style>
 </head>
-<body style="background-color: #121212;">
+<body style="background-color: black;padding: 20px;">
     <!-- 3D objsect -->
 <!-- This inserts the 3D object inside the aside container -->
-<model-viewer src="./assets/boomer.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/HTC_Vive_Headset.gltf" style="height: 80vh; width: 100vw;"></model-viewer>
+<model-viewer src="./assets/boomer.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.31" exposure="1" shadow-softness="1" environment-image="./assets/rural_asphalt_road_4k.hdr" skybox-image="./assets/rural_asphalt_road_4k.hdr" style="height: 80vh; width: 100%;border-radius: 30px;"> </model-viewer>
 </body>
 <!--Imports a model-viewer JavaScript code -->
 <!--It helps to handle how the 3D Object would be displayed -->
